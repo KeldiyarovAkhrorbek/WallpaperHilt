@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.projects.wallpaperkotlin.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_random"
+        android:name="com.projects.wallpaperkotlin.fragments.RandomFragment"
+        android:label="Random"
+        tools:layout="@layout/fragment_random">
+        <action
+            android:id="@+id/action_nav_random_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_liked"
+        android:name="com.projects.wallpaperkotlin.fragments.LikedFragment"
+        android:label="My Favourites"
+        tools:layout="@layout/fragment_liked">
+        <action
+            android:id="@+id/action_nav_liked_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_popular"
+        android:name="com.projects.wallpaperkotlin.fragments.PopularFragment"
+        android:label="Popular"
+        tools:layout="@layout/fragment_popular">
+        <action
+            android:id="@+id/action_nav_popular_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.projects.wallpaperkotlin.fragments.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.projects.wallpaperkotlin.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.projects.wallpaperkotlin.fragments.secondary.ImageFragment"
+        android:label="ImageFragment"
+        tools:layout="@layout/fragment_image">
+        <action
+            android:id="@+id/action_imageFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.projects.wallpaperkotlin.fragments.filter.FilterFragment"
+        android:label="FilterFragment"
+        tools:layout="@layout/fragment_filter" />
+</navigation>

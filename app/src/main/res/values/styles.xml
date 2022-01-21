@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheetStyle">
+        <![CDATA[<style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">         <item name="android:background">@android:color/transparent</item>     </style>]]></style>
+</resources>
